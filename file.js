@@ -76,7 +76,7 @@ function reload() {
     reloadtButton.addEventListener("click", reload, false);
 }
 function stay(){
-    if (dealSum <= sum){
+    if (dealSum <= sum || dealSum > 21){
         message = "You Win!"
     }else if(dealSum > sum && dealSum <= 21 ){
         message = "Dealer Wins..."
